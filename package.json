@@ -1,0 +1,31 @@
+{
+  "name": "guardrails-action",
+  "version": "1.0.0",
+  "description": "PoC guardrails action",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahMorse/guardrails-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoahMorse/guardrails-action/issues"
+  },
+  "homepage": "https://github.com/NoahMorse/guardrails-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.8",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "rollup": "^4.52.5"
+  }
+}
