@@ -1,15 +1,30 @@
 name: Guardrails POC Action Test
-description: Greet someone and record the time
+description: Process security scan results through Guardrails API
 
 inputs:
-  who-to-greet: # id of input
-    description: Who to greet
+  scan_results_path:
+    description: Path to the JSON file containing scan results
     required: true
-    default: World
+  instruction_file_path:
+    description: Path to the instruction file or directory containing instruction files
+    required: true
+  scanner_type:
+    description: Type of scanner used (e.g., snyk, bandit)
+    required: true
+  api_url:
+    description: Guardrails API URL
+    required: true
+  api_key:
+    description: Guardrails API key
+    required: true
 
 outputs:
-  time: # id of output
-    description: The time we greeted you
+  api_response:
+    description: The response from the Guardrails API
+  updated_instructions:
+    description: The updated instructions content from the API response
+  instruction_file:
+    description: The resolved path to the instruction file that was processed
 
 runs:
   using: node20
