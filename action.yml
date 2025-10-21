@@ -1,4 +1,4 @@
-name: Hello World
+name: Guardrails POC Action Test
 description: Greet someone and record the time
 
 inputs:
