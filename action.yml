@@ -17,6 +17,10 @@ inputs:
   api_key:
     description: Guardrails API key
     required: true
+  auto_commit:
+    description: Automatically commit and push updated instruction file (default true)
+    required: false
+    default: 'true'
 
 outputs:
   api_response:
